@@ -1,3 +1,4 @@
+<br />
 <p align="center"><img src="./renderer/public/logo.svg"></p>
 <hr />
 
