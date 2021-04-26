@@ -1,6 +1,5 @@
 <p align="center"><img src="./renderer/public/logo.svg"></p>
 <hr />
-<br />
 
 <p align="center"><img src="./resources/sample.png"></p>
 
