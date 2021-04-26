@@ -2,7 +2,7 @@
 <p align="center"><img src="./renderer/public/logo.svg"></p>
 <hr />
 
-<p align="center"><img src="./resources/sample.png"></p>
+<p align="center"><img style="border-radius: 4px" src="./resources/sample.png"></p>
 
 <hr />
 
