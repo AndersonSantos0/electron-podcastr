@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+    .wrapper{
+        flex-direction: column;
+    }
+
+    main.main{
+        max-height: calc(100vh - 8rem);
+        min-height: calc(100vh - 8rem);
+    }
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+
+    main.main{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+}

@@ -1,0 +1,137 @@
+.homepage {
+    padding: 0 4rem;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        transition: .2s;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #44444466;
+    }
+
+    h2 {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.latestEpisodes {
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+.allEpisodes {
+    padding-bottom: 2rem;
+
+    table{
+        width: 100%;
+
+        th, td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            transition: .2s border-color;
+        }
+
+        th {
+            color: var(--description);
+            text-transform: uppercase;
+            font: 500 0.75rem Lexend, sans-serif;
+            text-align: left;
+        }
+
+        .dateTD{
+            min-width: 100px;
+        }
+
+        td{
+            font-size: .875rem;
+
+            > div{
+                img{
+                    min-width: 3rem !important;
+                    min-height: 3rem !important;
+                    border-radius: .5rem;
+                }
+            }
+            
+
+            p {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            a {
+                color: var(--text);
+                font-family: Lexend, sans-serif;
+                text-decoration: none;
+                line-height: 1.4rem;
+                font-size: 1rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            button{
+                right: 2rem;
+                bottom: 2rem;
+
+                width: 2rem;
+                height: 2rem;
+                background-color: var(--subBackground);
+                border: 1px solid var(--border);
+                border-radius: 0.5rem;
+                font-size: 0;
+                transition: .2s;
+
+                > img {
+                    min-width: 0;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+
+                &:hover{
+                    filter: brightness(.95);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 670px){
+    .membersTH, .membersTD{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .duratinTH, .durationTD{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .dateTH, .dateTD{
+        display: none;
+    }
+}
