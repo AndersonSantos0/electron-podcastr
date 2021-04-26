@@ -1,38 +1,35 @@
+<p align="center"><img src="./renderer/public/logo.svg"></p>
+<hr />
+<br />
+
 <p align="center"><img src="./resources/sample.png"></p>
+
+<hr />
 
 ## Usage
 
-### Create an App
+### Get the project
 
 ```
-# with npx
-$ npx create-nextron-app my-app --example with-javascript
-
-# with yarn
-$ yarn create nextron-app my-app --example with-javascript
-
-# with pnpx
-$ pnpx create-nextron-app my-app --example with-javascript
+$ git clone https://github.com/AndersonSantos0/electron-podcastr.git
 ```
 
 ### Install Dependencies
 
 ```
-$ cd my-app
+# using yarn
+$ yarn
 
-# using yarn or npm
-$ yarn (or `npm install`)
-
-# using pnpm
-$ pnpm install --shamefully-hoist
+# using npm
+$ npm install
 ```
 
 ### Use it
 
 ```
 # development mode
-$ yarn dev (or `npm run dev` or `pnpm run dev`)
+$ yarn dev or npm run dev
 
 # production build
-$ yarn build (or `npm run build` or `pnpm run build`)
+$ yarn build or npm run build
 ```

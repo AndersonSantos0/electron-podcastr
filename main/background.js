@@ -29,7 +29,6 @@ if (isProd) {
   });
 
   mainWindow.removeMenu()
-  SetVibrancy(window, material)
 
   if (isProd) {
     await mainWindow.loadURL('app://./home.html');

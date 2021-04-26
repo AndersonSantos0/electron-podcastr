@@ -118,6 +118,12 @@
     }
 }
 
+@media (max-width: 1190px) and (min-width: 1024px){
+    .membersTH, .membersTD{
+        display: none;
+    }
+}
+
 @media(max-width: 670px){
     .membersTH, .membersTD{
         display: none;
